@@ -1,42 +1,88 @@
-
-/* Fondo y tipografía */
+/* Estilos generales para la página */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
-  background: #f5f5f5;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
-/* Botón de WhatsApp */
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Estilo del botón de WhatsApp */
 .whatsapp-btn {
-  display: inline-block;
-  background-color: #25D366;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* Color verde de WhatsApp */
   color: white;
-  padding: 18px 35px;
-  font-size: 22px;
+  padding: 15px 25px;
+  font-size: 18px;
   border-radius: 50px;
   text-decoration: none;
-  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
   margin-top: 20px;
 }
 
-/* Animación al pasar el mouse */
+/* Estilo para el ícono de WhatsApp */
+.whatsapp-btn i {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  font-size: 24px; /* Tamaño del ícono */
+}
+
+/* Cambiar el color del botón cuando el ratón pasa por encima */
 .whatsapp-btn:hover {
-  background-color: #1ebe57;
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background-color: #1ebe57; /* Color más oscuro de WhatsApp cuando se pasa el ratón */
 }
 
-/* Encabezado */
-h1 {
-  color: #333;
-  margin-bottom: 20px;
+/* Estilos para el pie de página */
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #888;
 }
 
-/* Mensaje descriptivo */
-p {
-  color: #555;
-  font-size: 18px;
-  margin-bottom: 40px;
+footer a {
+  color: #25D366; /* Color verde de WhatsApp */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Hacer que el sitio sea responsive (para móviles y tabletas) */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .whatsapp-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .whatsapp-btn i {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
