@@ -4,13 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contáctame por WhatsApp</title>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
   <script>
-    // Redirigir sin mostrar el número
-    window.location.replace("https://wa.me/5491169692744");
+    // Redirige automáticamente a WhatsApp después de 2 segundos
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        window.location.href = "https://wa.me/5491169692744?text=Hola!";
+      }, 2000);
+    });
   </script>
 </head>
 <body>
-  <p>Abriendo chat de WhatsApp...</p>
+  <h1>Contáctanos por WhatsApp</h1>
+  <p>Estamos listos para responder tus consultas en cualquier momento.</p>
+  
+  <!-- Botón en caso de que la redirección no funcione -->
+  <a class="whatsapp-btn" href="https://wa.me/5491169692744?text=Hola!" target="_blank">
+    💬 Enviar WhatsApp
+  </a>
 </body>
 </html>
